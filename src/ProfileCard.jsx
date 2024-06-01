@@ -1,8 +1,11 @@
-function ProfileCard(props) {
+function ProfileCard({title, handle, image}) {
     return (
         <div>
-            <div>Title: {props.title} </div>
-            <div>Twitter username: {props.handle}</div>
+            <img src={image} />
+            <div>Title: {title} </div>
+            <div>Twitter username: {handle}</div>
+
+
         </div>
     )
 }
